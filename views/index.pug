@@ -1,0 +1,22 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Pagina Dinamica
+    body 
+
+    h1 Bienvenidos al juego!!! 
+    br
+    br
+    
+    form(action="/show" method="POST")
+        label(for="usuario1") Ingrese un numbre 
+        input(type="text" name="usuario1")  
+        label(for="usuario2") Ingrese un numbre 2
+        input(type="text" name="usuario2")  
+        label(for="usuario3") Ingrese un numbre 3
+        input(type="text" name="usuario3")  
+        button(type="submit") Crear 
+        

@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        h1 jugadores 
+        h2=users.name
+        h2=users2.name
+        h2=users3.name
+        h1 El ganador del juego es :
+        h2=winners 
+        h1 El estado del juego es :
+        h2=inProgress
+
+        form(action="/winners" method="POST")
+         input(type="hidden" value=winners name="winners")  
+         button(type="submit") winner !!!
+
+        form(action="/startGame" method="POST")
+         input(type="hidden" value=pon name="users") 
+         input(type="hidden" value=pon1 name="users1")  
+         input(type="hidden" value=pon2 name="users2")   
+         button(type="submit") startGame  !!!
+          
+       
+
